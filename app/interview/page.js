@@ -1,0 +1,2 @@
+import InterviewClient from '../../components/InterviewClient';
+export default function Interview(){return <div className="page"><div className="container"><div className="page-head"><div className="eyebrow">AI interview room</div><h1>Practice the part a video cannot simulate.</h1><p className="lead">Watch a lesson to learn. Use a quiz to test recall. Then use an AI interview to test whether you can explain the idea, defend a decision and handle follow-ups.</p></div><InterviewClient/></div></div>}

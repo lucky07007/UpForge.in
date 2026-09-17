@@ -1,0 +1,2 @@
+import {tracks} from '../data/content';
+export default function sitemap(){const base='https://upforge.in';return [{url:base,changeFrequency:'weekly',priority:1},{url:`${base}/learn`,priority:.9},{url:`${base}/notes`,priority:.9},{url:`${base}/quizzes`,priority:.9},{url:`${base}/practice`,priority:.9},{url:`${base}/interview`,priority:1},{url:`${base}/videos`,priority:.8},{url:`${base}/resources`,priority:.8},{url:`${base}/pricing`,priority:.8},...tracks.map(t=>({url:`${base}/track/${t.id}`,priority:.85}))]}

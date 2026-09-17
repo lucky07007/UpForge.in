@@ -1,0 +1,5 @@
+import './globals.css';
+import {AuthProvider} from '../components/AuthProvider';
+import SiteNav from '../components/SiteNav';
+export const metadata={title:'UpForge.in — Learn. Practice. Get Job Ready.',description:'UpForge.in is the learning and AI interview practice layer of UpForge.org: notes, quizzes, resources, career tracks and realistic AI interview practice.',metadataBase:new URL('https://upforge.in'),openGraph:{title:'UpForge.in — Learn. Practice. Get Job Ready.',description:'Structured learning, quizzes and AI interview practice for students.'}};
+export default function RootLayout({children}){return <html lang="en"><body><AuthProvider><SiteNav/><main>{children}</main><footer className="footer"><div className="container footer-inner"><div><strong>UpForge.in</strong><p>Learn. Practice. Explain. Improve.</p></div><div className="footer-links"><a href="https://upforge.org" target="_blank" rel="noreferrer">UpForge.org</a><a href="/pricing">₹49 plan</a><a href="/for-companies">For hiring teams</a></div></div></footer></AuthProvider></body></html>}

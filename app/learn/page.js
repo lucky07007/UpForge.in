@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { lessons } from "../../data/content";
+export default function Learn(){return <div className="page"><div className="container"><div className="page-head"><div className="eyebrow">Learn</div><h1>Interview readiness starts before the interview.</h1><p className="lead">Work through the modules in order, then use the practice areas to test yourself.</p></div><div className="list">{lessons.map((l,i)=><Link href={`/learn/${l.id}`} className="card lesson" key={l.id}><div className="lesson-left"><span className="number">{i+1}</span><div><span className="tag">{l.tag} · {l.mins} min</span><h3>{l.title}</h3><p>{l.body[0]}</p></div></div><span>→</span></Link>)}</div></div></div>}
